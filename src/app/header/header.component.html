@@ -1,0 +1,31 @@
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark navbar-height">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="px-5">
+        <a class="navbar-brand" [routerLink]="'home'" >Home</a>
+    </div>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <ul class="navbar-nav mr-auto mt-lg-0">
+            <li class="nav-item dropdown h-100">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Algorithms
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" [routerLink]="'algorithm/bubble-sort'">Bubble Sort</a>
+                    <a class="dropdown-item" [routerLink]="'algorithm/bucket-sort'">Bucket Sort</a>
+                    <a class="dropdown-item" [routerLink]="'algorithm/counting-sort'">Counting Sort</a>
+                    <a class="dropdown-item" [routerLink]="'algorithm/heap-sort'">Heap Sort</a>
+                    <a class="dropdown-item" [routerLink]="'algorithm/merge-sort'">Merge Sort</a>
+                    <a class="dropdown-item" [routerLink]="'algorithm/quick-sort'">Quick Sort</a>
+                    <a class="dropdown-item" [routerLink]="'algorithm/radix-sort'">Radix Sort</a>
+                    <a class="dropdown-item" [routerLink]="'algorithm/selection-sort'">Selection Sort</a>
+                </div>
+            </li>
+        </ul>
+        <form [formGroup]="searchAlgoForm" class="form-inline my-2 my-lg-0 pr-5" (ngSubmit)="search(searchAlgoForm.value)">
+            <input formControlName="algo" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </div>
+</nav>

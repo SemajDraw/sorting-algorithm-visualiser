@@ -1,0 +1,45 @@
+/* You can add global styles to this file, and also import other style files */
+
+.background {
+  background-color: #cecece;
+}
+
+.algo_container {
+  margin: auto;
+  background: #f6f6f6;
+  height: 100%;
+  width: 75%;
+}
+
+.algo-title-container {
+  height: 20%;
+}
+
+.algo-title {
+
+}
+
+.algo-graph {
+  width: 95%;
+  height: 60%;
+  border: 1px solid #cecece;
+  border-radius: 1%;
+  margin: auto;
+  -moz-box-shadow: 0 0 3px #ccc;
+  -webkit-box-shadow: 0 0 3px #ccc;
+  box-shadow: 0 0 3px #ccc;
+}
+
+.algo-button-container {
+  height: 20%;
+}
+
+.algo-button {
+  width: 200px;
+}
+
+.btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+
