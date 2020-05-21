@@ -1,12 +1,22 @@
-<div class="algo_container">
-    <div class="col-12 d-flex align-items-center justify-content-center algo-title-container">
-        <h1 class="algo-title">{{title}}</h1>
+<div class="algo-container">
+    <div class="row algo-title-container">
+        <div class="col-12 d-flex align-items-center justify-content-center">
+            <h1 class="algo-title">{{title}}</h1>
+        </div>
     </div>
-    <div class="algo-graph">
+    <div class="row graph-row">
+        <div class="graph-container container-fluid">
+            <div #graph class="graph row no-gutters align-items-end">
+            </div>
+        </div>
+    </div>
+    <div class="row button-row">
+        <div class="col-6 d-flex align-items-center justify-content-end">
+            <button class="algo-button btn btn-info" (click)="shuffleArray()">Shuffle</button>
+        </div>
+        <div class="col-6 d-flex align-items-center justify-content-start">
+            <button class="algo-button btn btn-info" (click)="startAlgo()">Start</button>
+        </div>
 
-    </div>
-    <div class="col-12 d-flex align-items-center justify-content-center algo-button-container">
-        <button class="algo-button btn btn-info" (click)="shuffleArray()">Shuffle</button>
-        <button class="algo-button btn btn-info" (click)="startAlgo()">Start</button>
     </div>
 </div>

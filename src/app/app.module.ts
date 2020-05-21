@@ -14,6 +14,7 @@ import { CountingSortComponent } from './algorithms/counting-sort/counting-sort.
 import { RadixSortComponent } from './algorithms/radix-sort/radix-sort.component';
 import { BucketSortComponent } from './algorithms/bucket-sort/bucket-sort.component';
 import {ReactiveFormsModule} from "@angular/forms";
+import {RandomArrayService} from "./algorithms/services/random-array.service";
 
 @NgModule({
   declarations: [
@@ -34,7 +35,7 @@ import {ReactiveFormsModule} from "@angular/forms";
     AppRoutingModule,
     ReactiveFormsModule
   ],
-  providers: [],
+  providers: [RandomArrayService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

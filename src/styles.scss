@@ -4,7 +4,7 @@
   background-color: #cecece;
 }
 
-.algo_container {
+.algo-container {
   margin: auto;
   background: #f6f6f6;
   height: 100%;
@@ -13,33 +13,52 @@
 
 .algo-title-container {
   height: 20%;
+  margin: auto;
 }
 
 .algo-title {
 
 }
 
-.algo-graph {
-  width: 95%;
+.graph-row {
   height: 60%;
-  border: 1px solid #cecece;
-  border-radius: 1%;
+  width: 100%;
   margin: auto;
+}
+
+.graph-container {
+  width: 95%;
+  height: 100%;
+  border: 1px solid #cecece;
+  border-radius: 2px;
+  padding: 1%;
   -moz-box-shadow: 0 0 3px #ccc;
   -webkit-box-shadow: 0 0 3px #ccc;
   box-shadow: 0 0 3px #ccc;
 }
 
-.algo-button-container {
+.button-row {
   height: 20%;
+  width: 100%;
+  margin: auto;
+}
+
+.algo-button-container {
+  height: 100%;
+  width: 100%
 }
 
 .algo-button {
-  width: 200px;
+  width: 50%;
 }
 
 .btn:focus {
   outline: none;
   box-shadow: none;
+}
+
+.graph {
+  height: 100%;
+  width: 100%;
 }
 
